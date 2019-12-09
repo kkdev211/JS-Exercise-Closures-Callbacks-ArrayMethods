@@ -133,8 +133,15 @@ function processProduct(num1, num2, callback) {
  * "lady gaga" and `['foo', 'bar']` and `(bool) => bool ? 'nice!' : 'sad'`,
  * should return "sad".
 */
-function processContains(/* CODE HERE */) {
-  /* CODE HERE */
+function processContains(item, list, callback) {
+  return callback {
+    if(list.filter())
+    // if(list.indexOf(item) === -1) {
+    //   list.push(item);
+    //   console.log(`true`);
+    // }
+    // else if (list.indexOf(item) > -1)
+    // console.log(`false`);
 }
 
 /**
