@@ -204,9 +204,18 @@ function getFullNames(runners) {
  * @returns an array with all the runners' first names in ALL CAPS.
  * The first names appear in the array in the same order the runners appear in the `runners` array.
 */
-function firstNamesAllCaps(/* CODE HERE */) {
-  /* CODE HERE */
+function firstNamesAllCaps(runners) {
+  return runners.map(function(runners) {
+    return runners.first_name.toUpperCase();
+  });
 }
+  // const result = [];
+  // runners.forEach(runner => {
+  //   let fullame = runner.first_name.toUpperCase();
+  //   result.push(fullame);
+  // })
+  // return result;
+// }
 
 /**
  * ### Challenge `getRunnersByTShirtSize`
@@ -221,8 +230,11 @@ function firstNamesAllCaps(/* CODE HERE */) {
  * @returns an array containing only the runners that use the given `tShirtSize`.
  * The runners in the array appear in the same order they appear in the `runners` array.
 */
-function getRunnersByTShirtSize(/* CODE HERE */) {
-  /* CODE HERE */
+function getRunnersByTShirtSize(runners, tShirtSize) {
+
+  return runners.filter(function(runners) {
+    return runners.shirt_size === tShirtSize;
+  }) 
 }
 
 /**
